@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 body{
     margin: 0;
@@ -41,6 +39,33 @@ color: white;
 
 .logo:hover {
     transform: scale(1.05);
+
+}
+
+/* تنسيق زر المود */
+.mode-btn {
+    background: none;
+    border: 1px solid #f2dec4;
+    color: #f2dec4;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+
+.dark-theme {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+.dark-theme .skill-card, .dark-theme .project-card {
+    background-color: #f2dec4; 
+    color: rgb(16, 15, 15);
+}
+
+.dark-theme header, .dark-theme footer {
+    background-color: #000; 
 }
 
 ul{
@@ -275,34 +300,26 @@ footer p {
     color: #aaa;
 }
 
-body.dark-theme {
-    background-color: #1a1a1a !important; 
-    color: #ffffff !important; 
+
+.top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #333;
+    color: #f2dec4;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none; 
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-body.dark-theme header, 
-body.dark-theme footer {
-    background-color: #000000 !important;
-}
-
-body.dark-theme .skill-card, 
-body.dark-theme .project-card,
-body.dark-theme form {
-    background-color: #2d2d2d !important;
-    color: #ffffff !important;
-    border: 1px solid #444;
-}
-
-body.dark-theme .project-card p,
-body.dark-theme .skill-card p {
-    color: #ccc !important;
-}
-
-body.dark-theme nav ul li a {
-    color: #f2dec4 !important;
-}
-
-body.dark-theme .mode-btn {
-    border-color: #f2dec4 !important;
-    color: #f2dec4 !important;
+.top-btn:hover {
+    background-color: #555;
+    transform: translateY(-5px);
 }
