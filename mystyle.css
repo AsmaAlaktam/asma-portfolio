@@ -274,3 +274,35 @@ footer p {
     font-size: 0.9rem;
     color: #aaa;
 }
+
+body.dark-theme {
+    background-color: #1a1a1a !important; 
+    color: #ffffff !important; 
+}
+
+body.dark-theme header, 
+body.dark-theme footer {
+    background-color: #000000 !important;
+}
+
+body.dark-theme .skill-card, 
+body.dark-theme .project-card,
+body.dark-theme form {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+    border: 1px solid #444;
+}
+
+body.dark-theme .project-card p,
+body.dark-theme .skill-card p {
+    color: #ccc !important;
+}
+
+body.dark-theme nav ul li a {
+    color: #f2dec4 !important;
+}
+
+body.dark-theme .mode-btn {
+    border-color: #f2dec4 !important;
+    color: #f2dec4 !important;
+}
