@@ -1,4 +1,4 @@
-const contactForm = document.getElementById('content');
+const contactForm = document.getElementById('form2');
 
 contactForm.addEventListener('submit', function(event) {
     
